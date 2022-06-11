@@ -1,0 +1,324 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Signika+Negative&display=swap');
+
+* {
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    width: 100%;
+}
+main {
+    width: 100%;
+    
+}
+footer {
+    width: 100%;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.header {
+    width: 95%;
+    margin: 0 auto;
+    background-color: #353535;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header .logo {
+    display: inline-flex;
+    filter: invert(100%);
+    padding: 30px;
+}
+.header .logo img {
+    width: 70px;
+    height: 70px;
+    filter: drop-shadow(5px 5px 5px white);
+}
+.header .logo h1 {
+    font-family: 'Signika Negative', sans-serif;
+    filter: drop-shadow(5px 5px 5px white);
+}
+.header .menu {
+    width: 50%;
+    padding: 5px;
+}
+.header .menu ul {
+    justify-content: space-around;
+}
+.header .menu ul, .title, a{
+    display: flex;
+    text-decoration: none;
+}
+.header .menu ul .submenu ul .submenu2 ul li a {
+    color: white;
+    justify-content: center;
+}
+.header .menu ul .title {
+    width: 195px;
+    text-align: center;
+}
+.header .menu ul .title h2 {
+    border-left: 2px dotted white;
+    padding: 5px;
+}
+.header .menu ul .title:hover {
+    color: white;
+    cursor: pointer;
+}
+.header .menu ul li .submenu{
+    display: none;
+}
+.header .menu ul li:hover .submenu{
+    display: block;
+}
+.header .menu ul li .submenu {
+    position: absolute;
+}
+.submenu ul {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 195px;
+    top: 100px;
+    left: -45px;
+}
+.submenu ul li {
+    display: block;
+    position: relative;
+    width: 150px;
+    background-color: #353535;
+    height: 50px;
+}
+.submenu ul li:hover {
+    background-color: gray;
+}
+.submenu ul li:hover .submenu2 {
+    display: block;
+}
+.submenu2 {
+    display: none;
+}
+.submenu2 ul {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 195px;
+    top: 0;
+    left: 110px;
+}
+.submenu2 ul li {
+    display: block;
+    position: relative;
+    width: 150px;
+    background-color: #353535;
+    height: 50px;
+}
+.menu-mobile .menu-m, .menu2, .menu6, .menu10 {
+    display: none;
+}
+input {
+    display: none;
+}
+.header .menu-mobile input:checked + label .menu-m {
+    display: flex;
+}
+.menu-mobile {
+    display: none;
+}
+.menu-m {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 200px;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.801);
+    border-right: 5px solid black;
+    z-index: 2;
+    flex-direction: column;
+    justify-content: space-around;
+    color: white;
+}
+.menu-m .tt h2{
+    background-color: #353535;
+}
+.tt input:checked + label .menu2 {
+    display: block;
+}
+.menu2 {
+    position: relative;
+    left: 200px;
+    top: -85px;
+    width: 150px;
+    background-color: #353535;
+    justify-content: flex-start;
+}
+.menu2 ul {
+    position: absolute;
+    background-color: #353535;
+    width: 150px;
+}
+.menu-mobile h2:hover {
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+}
+.menu2 a {
+    text-decoration: none;
+    color: white;
+}
+.menu2 a:hover {
+    color: black;
+    font-weight: bold;
+}
+.menu2 label:hover {
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+}
+.menu2 input:nth-of-type(1):checked + label .menu3 {
+    display: block;
+}
+.menu2 input:nth-of-type(2):checked + label .menu4 {
+    display: block;
+}
+.menu2 input:nth-of-type(3):checked + label .menu5 {
+    display: block;
+}
+.menu3 , .menu4 , .menu5 {
+    display: none;
+}
+.menu3 ul{
+    position: absolute;
+    width: 150px;
+}
+
+.menu-m .ted h2 {
+    background-color: #353535;
+}
+.menu6 {
+    position: relative;
+    left: 200px;
+    top: -85px;
+    width: 150px;
+    background-color: #353535;
+    justify-content: flex-start;
+}
+.menu6 ul{
+    position: absolute;
+    background-color: #353535;
+    width: 150px;
+}
+.menu6 a {
+    text-decoration: none;
+    color: white;
+}
+.menu6 a:hover {
+    color: black;
+    font-weight: bold;
+}
+.menu6 label:hover {
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+}
+.menu7 , .menu8 , .menu9 {
+    display: none;
+}
+.menu6 input:nth-of-type(1):checked + label .menu7 {
+    display: block;
+}
+.menu6 input:nth-of-type(2):checked + label .menu8 {
+    display: block;
+}
+.menu6 input:nth-of-type(3):checked + label .menu9 {
+    display: block;
+}
+.ted input:checked + label .menu6 {
+    display: block;
+}
+.menu-m .tf h2 {
+    background-color: #353535;
+}
+.menu10 {
+    position: relative;
+    left: 200px;
+    top: -150px;
+    width: 150px;
+    background-color: #353535;
+    justify-content: flex-start;
+}
+.menu10 ul {
+    position: absolute;
+    background-color: #353535;
+    width: 150px;
+}
+.menu10 a {
+    text-decoration: none;
+    color: white;
+}
+.menu10 a:hover {
+    color: black;
+    font-weight: bold;
+}
+.menu10 label:hover {
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+}
+.menu11 , .menu12 , .menu13 {
+    display: none;
+}
+.tf input:checked + label .menu10 {
+    display: block;
+}
+.menu10 input:nth-of-type(1):checked + label .menu11 {
+    display: block;
+}
+.menu10 input:nth-of-type(2):checked + label .menu12 {
+    display: block;
+}
+.menu10 input:nth-of-type(3):checked + label .menu13 {
+    display: block;
+}
+/*main*/
+
+.main .banner {
+    width: 95%;
+    max-width: 95%;
+    margin: 0 auto;
+}
+.main .img {
+    width: 400px;
+    margin: 0 auto;
+    border: 3px solid #353535;
+    text-align: center;
+    background-color: #353535;
+    color: white;
+}
+.main .img a img {
+    width: 400px;
+    height: 300px;
+}
+.main .apresentation {
+    width: 95%;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+@media screen and (max-width: 1069px) {
+    .header .menu {
+        display: none;
+    }
+    .header .menu-mobile {
+        display: block;
+        padding: 20px;
+    }
+}
